@@ -12,6 +12,8 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/menu.css">
   <script defer src="js.js"></script>
   <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
@@ -20,18 +22,26 @@
 
 </head>
 
-<body class="fondo position-relative">
+<body class="fondo position-relative px-3">
   <button id="theme"><div id="theme-icon"></div></button>
   <div class="sombra fixed-bottom">
     <div class="fixed-bottom menu">
+      <svg width="100" height="100">
+        <path id="curve" d="M0,20 A100,72 0 0,1 0,160"></path>
+        <text>
+          <textPath xlink:href="#curve" startOffset="15%">
+          CONTACTO
+          </textPath>
+        </text>
+      </svg>
+     
       <a href="">
         <div class="fixed-bottom text-black animenu" id="Insta"><i class="fa fa-instagram" aria-hidden="true"></i></div>
       </a>
       <a href="https://github.com/Asosa17" target="_blank">
         <div class="fixed-bottom text-black animenu" id="Git"><svg xmlns="http://www.w3.org/2000/svg" width="16"
             height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
           </svg></div>
       </a>
       <a href="">
@@ -52,44 +62,46 @@
       <div class="col-2 p-0 text-center foto">
         <img src="img/FotoDni.jpeg" alt="">
       </div>
-      <div class="col-10 ps-4">
-        <h1>Alejandro Sosa Fernández</h1>
-        <h3><i>Desarrollador</i></h3>
+      <div class="col-10 ps-4 pt-3">
+        
+        <h1 class="text2">Alejandro Sosa Fernández</h1>
+        <h3 class="text3"><i>Desarrollador</i></h3>
       </div>
-
+      
     </div>
     <div class=" hidden ">
       <main>
         <div class="row align-item-strecht my-5 mx-2  ">
-          <div class="col-md-8 Datos  border border-white border-3 rounded gris">
+          <div class="col-8 Datos  border border-white border-3 rounded gris" >
             <h1 class="text">Datos personales</h1>
           </div>
-          <div class="col-md-4 "><img src="img/fotoPersonal.png" alt="" width="100%"></div>
+          <div class="col-4 "><img class="img" src="img/fotoPersonal.png" alt=""></div>
         </div>
         <div class="row align-item-strecht mb-5 hidden mx-2">
-          <div class="col-md-8 Datos  border border-white border-3 rounded gris">
+          <div class="col-8 Datos  border border-white border-3 rounded gris">
             <h1 class="text">Formación académica</h1>
           </div>
-          <div class="col-md-4 child"><img src="img/fotoEstudios.png" alt="" width="100%"></div>
+          <div class="col-4 child"><img class="img"  src="img/fotoForm.png" alt=""></div>
         </div>
         <div class="row align-item-strecht mb-5 hidden mx-2 ">
-          <div class="col-md-8 Datos  border border-white border-3 rounded gris">
+          <div class="col-8 Datos  border border-white border-3 rounded gris">
             <h1 class="text">Formación complementaria</h1>
           </div>
-          <div class="col-md-4 child"><img src="img/fotoFormcom.png" alt="" width="100%"></div>
+          <div class="col-4 child"><img class="img"  src="img/fotoFormcom.png" alt=""></div>
         </div>
         <div class="row align-item-strecht mb-5 hidden mx-2">
-          <div class="col-md-8 Datos  border border-white border-3 rounded gris">
+          <div class="col-8 Datos  border border-white border-3 rounded gris">
             <h1 class="text">Experiencia laboral</h1>
           </div>
-          <div class="col-md-4 child"><img src="img/fotoEXP.png" alt="" width="100%"></div>
+          <div class="col-4 child"><img class="img" src="img/fotoEXP.png" alt=""></div>
         </div>
       </main>
     </div>
 
   </div>
-  <foote class="d-flex justify-content-center p-5">
-    <h1>Alejadnro sosa fernandez</h1>
+  <footer class="d-flex justify-content-center p-5">
+    
+    
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
