@@ -9,20 +9,18 @@
   }
   
     
+  .curva{
+    background-image: url(img/inkpx-curved-text.png);
   
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    position: absolute;
+    transform: translate(-35%,35%) rotate(-10deg) scale(1.5);
+}
  
-  text {
-    font-size: 14px;
-    text-anchor: start;
-    letter-spacing: -1px;
-    fill: #000000; /* Color del texto */
-  }
-  
-  #curve {
-    fill: none;
-    stroke: none;
-  }
-  
   
 
 .sombra:hover .menu{    
